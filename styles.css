@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* NAVBAR */
+
+.navbar {
+  padding: 1.2rem 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-items {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items-right {
+  margin-left: auto;
+}
+
+.nav-items-left {
+  margin-right: auto;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+
+.navbar-secondary {
+    display: none;
+    height: 100vh;
+    padding: 3rem 0;
+}
+
+
+
+.navbar-secondary-items {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-secondary-item {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 600px) {
+  .nav-item-collapsible {
+    display: none;
+  }
+
+  .navbar-secondary {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
