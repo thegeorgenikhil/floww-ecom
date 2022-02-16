@@ -1,11 +1,11 @@
-const navToggleBtn = document.getElementById("nav-toggle");
+const navOpen = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
 const navSecondary = document.getElementById("nav-secondary");
 
-navToggleBtn.addEventListener("click",() => {
-  navSecondary.classList.toggle("hidden")
-  navToggleBtn.classList.toggle("fa")
-  navToggleBtn.classList.toggle("fa-close")
-})
+navOpen.addEventListener("click", () => {
+  navSecondary.classList.toggle("hidden");
+});
 
-
-// fa fa-close
+navClose.addEventListener("click", () => {
+  navSecondary.classList.toggle("hidden");
+});
