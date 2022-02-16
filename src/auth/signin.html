@@ -77,18 +77,9 @@
     </nav>
 
     <div class="signup-card">
-      <div class="text-md text-center font-light">SIGN UP</div>
+      <div class="text-md text-center font-light">SIGN IN</div>
       <div class="divider-sm"></div>
       <form action="">
-        <div class="input-group">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            class="input"
-            placeholder="Enter Name: "
-            name="name"
-          />
-        </div>
         <div class="input-group">
           <label for="email">Email</label>
           <input
@@ -98,6 +89,7 @@
             name="email"
           />
         </div>
+
         <div class="input-group">
           <label for="password">Password</label>
           <input
@@ -107,21 +99,25 @@
             name="password"
           />
         </div>
-        <div class="input-group">
-          <label for="confirm-password">Confirm Password</label>
-          <input
-            type="password"
-            class="input"
-            placeholder="Confirm Password: "
-            name="confirm-password"
-          />
+        <div class="flex justify-between align-center text-xs">
+          <div class="flex align-center">
+            <input type="checkbox" name="remember-user" id="">
+            <label for="remember-user">&nbsp; Remember Me</label>
+          </div>
+          <a
+            href="/"
+            class="format-link color-primary underline-onhover"
+            >Forgot Password?</a
+          >
         </div>
-        <a href="" class="format-link"><div class="btn btn-block bg-primary ">Sign Up</div></a>
+        <a href="" class="format-link"
+        ><div class="btn btn-block bg-primary">Sign In</div></a
+      >
       </form>
-      <div class="text-xs font-semibold text-center m-8px">
-       Already have an account? Sign-in
+      <div class="text-xs font-semibold text-center">
+        Don't have an account? Sign up!
         <a
-          href="../auth/signin.html"
+          href="../auth/signup.html"
           class="color-primary format-link underline-onhover"
           >here</a
         >

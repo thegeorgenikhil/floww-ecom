@@ -2,20 +2,23 @@
 
 :root {
   --font-family: "Open Sans", sans-serif;
+  --body-bg-color: #f8f8f8;
 }
 
 body {
   font-family: var(--font-family);
+  background-color: var(--body-bg-color);
 }
 
 /* NAVBAR */
 
 .navbar {
   padding: 1.2rem 2rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
+  background-color: var(--color-dark);
 }
 
 .navbar-main {
@@ -41,14 +44,19 @@ body {
   display: none;
 }
 
-
 .navbar-secondary {
-    display: none;
-    height: 100vh;
-    padding: 3rem 0;
+  display: none;
+  padding: 2rem 1.6rem;
 }
 
-
+.navbar-secondary-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
 
 .navbar-secondary-items {
   list-style: none;
@@ -59,7 +67,86 @@ body {
   padding: 1rem 0;
 }
 
-@media screen and (max-width: 800px) {
+.hero-section {
+  max-width: 80%;
+  display: flex;
+  margin: 1rem auto;
+}
+
+.hero-content {
+  margin: auto;
+}
+
+.hero-img {
+  max-width: 55%;
+}
+
+.hero-heading {
+  font-size: var(--text-xl);
+}
+
+.signup-card {
+  background-color: var(--color-white);
+  max-width: 37.5rem;
+  border-radius: var(--border-md);
+  padding: 2rem;
+  margin: 4rem auto;
+  box-shadow: var(--shadow-sm);
+}
+
+/* UTILITY CLASSES */
+
+.format-link {
+  text-decoration: none;
+}
+
+.underline-onhover:hover {
+  text-decoration: underline;
+}
+
+.m-8px {
+  margin: 8px;
+}
+
+.btn {
+  margin: 8px 0;
+  /* The button component had a 2px margin, inorder to override that */
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-heading {
+    font-size: var(--text-lg);
+    text-align: center;
+  }
+
+  .hero-img {
+    max-width: 80%;
+  }
+
+  .hero-btn-group {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -68,7 +155,15 @@ body {
   }
 
   .navbar-secondary {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
   }
 
   .hidden {
@@ -77,5 +172,13 @@ body {
 
   .nav-toggle {
     display: block;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .signup-card {
+    max-width: 26.5rem;
   }
 }

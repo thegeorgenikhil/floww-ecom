@@ -4,42 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://flow-css.netlify.app/components.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <title>flow.css</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a7cf34d87a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Floww - Home</title>
   </head>
   <body>
-    <nav class="navbar-container bg-secondary color-white">
+    <nav class="navbar bg-dark color-white">
       <div class="navbar-main">
-        <h1 class="navbar-brand">Navbar</h1>
-        <ul class="navbar-group color-white">
-          <li class="navbar-hamburger" id="btn-collapse">
-            <i class="fas fa-bars"></i>
+        <ul class="navbar-items nav-items-left text-regular">
+          <li class="nav-item-right nav-toggle">
+            <i class="fas fa-bars" id="nav-toggle"></i>
           </li>
-          <li class="navbar-main">
-            <ul class="navbar-main-group text-sm">
-              <li class="navbar-item">
-                <a href="/" class="navbar-link">Features</a>
-              </li>
-              <li class="navbar-item">Pricing</li>
-              <li class="navbar-item">
-                <a href="/" class="navbar-link"><button class="btn bg-primary text-base">Signup</button></a>
-              </li>
-            </ul>
+          <li class="nav-item-left nav-item-collapsible">
+            <a href="./src/pages/shoes.html" class="navbar-link">Shoes</a>
+          </li>
+          <li class="nav-item-left nav-item-collapsible">
+            <a href="./src/pages/masks.html" class="navbar-link">Masks</a>
+          </li>
+        </ul>
+        <div class="navbar-brand">
+          <a href="/" class="navbar-link">floww.</a>
+        </div>
+        <ul class="navbar-items nav-items-right text-regular">
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="./src/pages/wishlist.html"
+              ><i class="far fa-heart"></i
+            ></a>
+          </li>
+          <li class="nav-item-right">
+            <a class="navbar-link" href="./src/pages/cart.html"
+              ><i class="fas fa-shopping-bag"></i
+            ></a>
+          </li>
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="./src/auth/signin.html"
+              ><i class="fas fa-user-circle"></i
+            ></a>
           </li>
         </ul>
       </div>
-      <ul class="navbar-collapsible-group color-white hidden" id="collapsible-group">
-        <li class="navbar-item">
-          <a href="/" class="navbar-link">Features</a>
-        </li>
-        <li class="navbar-item">Pricing</li>
-        <li class="navbar-item">
-          <a href="/" class="navbar-link"
-            ><button class="btn bg-primary text-base">Signup</button></a
-          >
-        </li>
-      </ul>
+      <div class="navbar-secondary hidden bg-dark" id="nav-secondary">
+        <div class="navbar-secondary-header">
+          <div class="font-semibold">
+            <a href="/" class="navbar-link">floww.</a>
+          </div>
+          <i class="fa fa-close" id="nav-close"></i>
+        </div>
+        <ul class="navbar-secondary-items text-lg">
+          <li class="navbar-secondary-item">
+            <a href="./src/pages/shoes.html" class="navbar-link">Shop Shoes</a>
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="./src/pages/masks.html" class="navbar-link">Shop Masks</a>
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="./src/pages/wishlist.html" class="navbar-link">Wishlist</a>
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="./src/auth/signin.html" class="navbar-link">Account</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    <main class="text-left hero-section">
+      <img
+        src="./assets/hero-img.png"
+        class="img-fluid hero-img"
+        alt="hero-image"
+      />
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          Get the most beautiful shoes and mask, fine-crafted with your comfort
+          in mind!
+        </h1>
+        <div class="hero-btn-group">
+          <a href="./src/pages/shoes.html" class="format-link"
+            ><button type="button" class="btn bg-dark">Shop Shoes</button></a
+          >
+          <a href="./src/pages/products.html" class="format-link"
+            ><button type="button" class="btn btn-outline btn-outline-dark">
+              See All Products
+            </button></a
+          >
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
