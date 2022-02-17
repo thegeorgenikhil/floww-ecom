@@ -16,21 +16,24 @@
   <body>
     <nav class="navbar bg-dark color-white">
       <div class="navbar-main">
-        <ul class="navbar-items nav-items-left text-regular">
+        <ul class="navbar-items nav-items-left text-sm">
           <li class="nav-item-right nav-toggle">
             <i class="fas fa-bars" id="nav-toggle"></i>
-          </li>
-          <li class="nav-item-left nav-item-collapsible">
-            <a href="./src/pages/shoes.html" class="navbar-link">Shoes</a>
-          </li>
-          <li class="nav-item-left nav-item-collapsible">
-            <a href="./src/pages/masks.html" class="navbar-link">Masks</a>
           </li>
         </ul>
         <div class="navbar-brand">
           <a href="/" class="navbar-link">floww.</a>
         </div>
-        <ul class="navbar-items nav-items-right text-regular">
+        <ul class="navbar-items nav-items-right text-sm">
+          <li class="nav-item-right search-product-input">
+            <input
+              type="text"
+              class="input"
+              placeholder="Type to search"
+              name="username"
+              autocomplete="off"
+            />
+          </li>
           <li class="nav-item-right nav-item-collapsible">
             <a class="navbar-link" href="./src/pages/wishlist.html"
               ><i class="far fa-heart"></i
@@ -57,10 +60,9 @@
         </div>
         <ul class="navbar-secondary-items text-lg">
           <li class="navbar-secondary-item">
-            <a href="./src/pages/shoes.html" class="navbar-link">Shop Shoes</a>
-          </li>
-          <li class="navbar-secondary-item">
-            <a href="./src/pages/masks.html" class="navbar-link">Shop Masks</a>
+            <a href="./src/pages/products.html" class="navbar-link"
+              >Shop Products</a
+            >
           </li>
           <li class="navbar-secondary-item">
             <a href="./src/pages/wishlist.html" class="navbar-link">Wishlist</a>
@@ -83,13 +85,8 @@
           in mind!
         </h1>
         <div class="hero-btn-group">
-          <a href="./src/pages/shoes.html" class="format-link"
-            ><button type="button" class="btn bg-dark">Shop Shoes</button></a
-          >
           <a href="./src/pages/products.html" class="format-link"
-            ><button type="button" class="btn btn-outline btn-outline-dark">
-              See All Products
-            </button></a
+            ><button type="button" class="btn bg-primary">Shop Now</button></a
           >
         </div>
       </div>
