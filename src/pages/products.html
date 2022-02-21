@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://flow-css.netlify.app/components.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a7cf34d87a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Floww - Products</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark color-white">
+      <div class="navbar-main">
+        <ul class="navbar-items nav-items-left text-sm">
+          <li class="nav-item-right nav-toggle">
+            <i class="fas fa-bars" id="nav-toggle"></i>
+          </li>
+          <li class="nav-item-left nav-item-collapsible">
+            <a href="../pages/products.html" class="navbar-link">Shop Now</a>
+          </li>
+        </ul>
+        <div class="navbar-brand">
+          <a href="/" class="navbar-link">floww.</a>
+        </div>
+        <ul class="navbar-items nav-items-right text-sm">
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="../pages/wishlist.html"
+              ><i class="far fa-heart"></i
+            ></a>
+          </li>
+          <li class="nav-item-right">
+            <a class="navbar-link" href="../pages/cart.html"
+              ><i class="fas fa-shopping-bag"></i
+            ></a>
+          </li>
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="../auth/signin.html"
+              ><i class="fas fa-user-circle"></i
+            ></a>
+          </li>
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="../auth/signin.html"
+              ><i class="fas fa-sign-out-alt"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-secondary hidden bg-dark" id="nav-secondary">
+        <div class="navbar-secondary-header">
+          <div class="font-semibold">
+            <a href="/" class="navbar-link">floww.</a>
+          </div>
+          <i class="fa fa-close" id="nav-close"></i>
+        </div>
+        <ul class="navbar-secondary-items text-lg">
+          <li class="navbar-secondary-item">
+            <a href="../pages/products.html" class="navbar-link"
+              >Shop Products</a
+            >
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="../pages/wishlist.html" class="navbar-link">Wishlist</a>
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="../auth/signin.html" class="navbar-link">Account</a>
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="../auth/signin.html" class="navbar-link">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="product-section">
+      <aside class="product-sidebar">
+        <h1>FILTERS</h1>
+        <div class="divider-sm"></div>
+        <div class="filter-item">
+          <div class="filter-heading">PRICE</div>
+          <div class="slider-content">
+            <label for="slider">₹0</label>
+            <div class="slider-container">
+              <input
+                type="range"
+                name="slider"
+                min="0"
+                max="11000"
+                step="50"
+                id="slider"
+              />
+              <span id="slider-value">0</span>
+            </div>
+            <label for="slider">₹11,000</label>
+          </div>
+        </div>
+        <div class="filter-item">
+          <div class="filter-heading">CATEGORY</div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Shoes" />
+            <label for="Shoes">Shoes</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Masks" />
+            <label for="Masks">Masks</label>
+          </div>
+        </div>
+        <div class="filter-item">
+          <div class="filter-heading">BRAND</div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Kenneth Cole" id="" />
+            <label for="Kenneth Cole">Kenneth Cole</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="HRX" id="" />
+            <label for="HRX">HRX</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Highlander" id="" />
+            <label for="Highlander">Highlander</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Roadster" id="" />
+            <label for="Roadster">Roadster</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Red Tape" id="" />
+            <label for="Red Tape">Red Tape</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Nike" id="" />
+            <label for="Nike">Nike</label>
+          </div>
+        </div>
+        <div class="filter-item">
+          <div class="filter-heading">RATINGS</div>
+          <div class="ratings-slider">
+            <label for="slider">1<span class="rated">★</span></label>
+            <div class="slider-container">
+              <input type="range" name="slider" min="1" max="5" step="1" />
+            </div>
+            <label for="slider">5<span class="rated">★</span></label>
+          </div>
+        </div>
+      </aside>
+      <main class="product-main">
+        <div class="product-head">
+          <h1>PRODUCTS</h1>
+          <div class="sort-container">
+            <label for="price-sort">SORT BY</label>
+            <select class="price-sort" name="price-sort">
+              <option value="low-to-high">Price Low to High</option>
+              <option value="high-to-low">Price High to Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="divider-sm"></div>
+        <div class="products-container">
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11999370/2021/6/2/509dea1c-52f9-4396-97ae-9c7c310071871622610268085KennethColeAdultsBlack6-PlyReusableProtectiveKnittedOutdoorM1.jpg"
+              alt="img card-img"
+              alt="img card-img"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Kenneth Cole</h2>
+                  <p class="font-medium text-sm">
+                    5<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">
+                  Adults Black 6-Ply Reusable....
+                </p>
+                <p class="text-sm color-secondary font-bold">Rs. 239</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12027344/2020/7/30/c2204a0a-3b6c-45fa-bf18-9f41a1d08f9a1596082992352-HRX-by-Hrithik-Roshan-Unisex-Outdoor-Masks-4851596082990063-1.jpg"
+              alt="img card-img"
+              alt="img card-img"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">HRX</h2>
+                  <p class="font-medium text-sm">
+                    3.2<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">Unisex Pack of 3 Protekt-X...</p>
+                <p class="text-sm color-secondary font-bold">Rs. 415</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12027352/2020/7/30/8b8e028a-2191-4471-a00d-caac1df1fa3c1596083033814-HRX-by-Hrithik-Roshan-Unisex-Outdoor-Masks-9271596083031936-1.jpg"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">HRX</h2>
+                  <p class="font-medium text-sm">
+                    4<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">Unisex Pack of 3 Black...</p>
+                <p class="text-sm color-secondary font-bold">Rs. 519</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11097166/2019/12/10/cb47b7dc-e28a-4559-8388-8b82762b27681575980908117-HIGHLANDER-Men-White-Sneakers-661575980906633-1.jpg"
+              alt="img card-img"
+              alt="img card-img"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Highlander</h2>
+                  <p class="font-medium text-sm">
+                    3.2<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">Men White Sneakers</p>
+                <p class="text-sm color-secondary font-bold">Rs. 699</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11756892/2021/12/14/e141e830-7352-4e67-a119-e6e8da1682fd1639478472050-Roadster-Men-Grey-Solid-Suede-Finish-Sneakers-75316394784715-1.jpg"
+              alt="img card-img"
+              alt="img card-img"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Roadster</h2>
+                  <p class="font-medium text-sm">
+                    3.9<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">Men Grey Solid Suede...</p>
+                <p class="text-sm color-secondary font-bold">Rs. 749</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11097158/2021/2/17/8a4dbf96-9fa1-4ac2-9841-ef7c53e141e31613525189923HIGHLANDERMenGreySneakers1.jpg"
+              alt="img card-img"
+              alt="img card-img"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Highlander</h2>
+                  <p class="font-medium text-sm">
+                    3.2<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">Men Grey Sneakers</p>
+                <p class="text-sm color-secondary font-bold">Rs. 1094</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16407156/2021/12/8/0661a28b-331d-4562-b8b3-ce812c76269c1638939555755RedTapeMenWhite1.jpg"
+              alt="img card-img"
+              alt="img card-img"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Red Tape</h2>
+                  <p class="font-medium text-sm">
+                    4.4<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">Men White Mesh Walking Shoes</p>
+                <p class="text-sm color-secondary font-bold">Rs. 1679</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img-fluid card-img"
+              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16045962/2022/1/10/9322e67c-32a4-4fe6-8c47-6db0822f65261641811914411-NIKE-AIR-ZOOM-PEGASUS-38-3911641811914046-1.jpg"
+              alt="img card-img"
+              alt="img card-img"
+            />
+            <div class="card-body">
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Nike</h2>
+                  <p class="font-medium text-sm">
+                    5<span class="rated">★</span>
+                  </p>
+                </div>
+                <div class="divider-sm"></div>
+                <p class="text-xs color-gray">NIKE Men Black AIR ZOOM...</p>
+                <p class="text-sm color-secondary font-bold">Rs. 10920</p>
+                <button class="btn btn-block bg-dark text-xs">
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-block btn-outline btn-outline-dark text-xs"
+                >
+                  Add To Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="../../index.js"></script>
+    <script src="./slider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://flow-css.netlify.app/components.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a7cf34d87a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Floww - Products</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark color-white">
+      <div class="navbar-main">
+        <ul class="navbar-items nav-items-left text-sm">
+          <li class="nav-item-right nav-toggle">
+            <i class="fas fa-bars" id="nav-toggle"></i>
+          </li>
+          <li class="nav-item-left nav-item-collapsible">
+            <a href="../pages/products.html" class="navbar-link">Shop Now</a>
+          </li>
+        </ul>
+        <div class="navbar-brand">
+          <a href="/" class="navbar-link">floww.</a>
+        </div>
+        <ul class="navbar-items nav-items-right text-sm">
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="../pages/wishlist.html"
+              ><i class="far fa-heart"></i
+            ></a>
+          </li>
+          <li class="nav-item-right">
+            <a class="navbar-link" href="../pages/cart.html"
+              ><i class="fas fa-shopping-bag"></i
+            ></a>
+          </li>
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="../auth/signin.html"
+              ><i class="fas fa-user-circle"></i
+            ></a>
+          </li>
+          <li class="nav-item-right nav-item-collapsible">
+            <a class="navbar-link" href="../auth/signin.html"
+              ><i class="fas fa-sign-out-alt"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-secondary hidden bg-dark" id="nav-secondary">
+        <div class="navbar-secondary-header">
+          <div class="font-semibold">
+            <a href="/" class="navbar-link">floww.</a>
+          </div>
+          <i class="fa fa-close" id="nav-close"></i>
+        </div>
+        <ul class="navbar-secondary-items text-lg">
+          <li class="navbar-secondary-item">
+            <a href="../pages/products.html" class="navbar-link"
+              >Shop Products</a
+            >
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="../pages/wishlist.html" class="navbar-link">Wishlist</a>
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="../auth/signin.html" class="navbar-link">Account</a>
+          </li>
+          <li class="navbar-secondary-item">
+            <a href="../auth/signin.html" class="navbar-link">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="cart-header">
+      <h1 class="text-lg">My Cart</h1>
+    </header>
+    <section class="cart-section">
+      <main class="cart-main">
+        <div class="user-details-container">
+          <p class="color-gray text-xs font-semibold">GENERAL INFORMATION</p>
+          <div class="divider-sm"></div>
+          <div class="user-profile">
+            <div class="username-container">
+              <img
+                src="https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/oapgW_Fp_400x400.jpg"
+                alt="avatar"
+                class="avatar avatar-md"
+              />
+              <p class="font-semibold">Nikhil George</p>
+            </div>
+            <div class="editable-container">
+              <div class="flex justify-between align-center color-gray text-xs">
+                <p>Email</p>
+                <i class="fas fa-marker edit-detail-icon"></i>
+              </div>
+              <p>nikhil@gmail.com</p>
+            </div>
+            <div class="editable-container">
+              <div class="flex justify-between align-center color-gray text-xs">
+                <p>Phone Number</p>
+                <i class="fas fa-marker edit-detail-icon"></i>
+              </div>
+              <p>980XXX48XX</p>
+            </div>
+          </div>
+          <div class="shipping-details">
+            <div class="editable-container">
+              <div class="flex justify-between align-center color-gray text-xs">
+                <p>Shipping Address</p>
+                <i class="fas fa-marker edit-detail-icon"></i>
+              </div>
+              <p>Add New Address</p>
+            </div>
+          </div>
+        </div>
+        <div class="cart-products-container">
+          <p class="color-gray text-xs font-semibold">ITEMS IN CART</p>
+          <div class="cart-product-card">
+            <div class="card-dismiss color-gray">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="cart-product-card-body">
+              <img
+                class="img-fluid cart-product-img"
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11999370/2021/6/2/509dea1c-52f9-4396-97ae-9c7c310071871622610268085KennethColeAdultsBlack6-PlyReusableProtectiveKnittedOutdoorM1.jpg"
+                alt="img card-img"
+                alt="img card-img"
+              />
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Kenneth Cole</h2>
+                </div>
+                <p class="text-xs color-gray">
+                  Adults Black 6-Ply Reusable Protective Knitted Outdoor Mask
+                </p>
+                <div class="product-count-container">
+                  <span class="product-count"><i class="fas fa-plus"></i></span>
+                  <p>1</p>
+                  <span class="product-count"
+                    ><i class="fas fa-minus"></i
+                  ></span>
+                </div>
+                <p class="text-sm color-secondary font-bold">Rs. 239</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-product-card">
+            <div class="card-dismiss color-gray">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="cart-product-card-body">
+              <img
+                class="img-fluid cart-product-img"
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16045962/2022/1/10/9322e67c-32a4-4fe6-8c47-6db0822f65261641811914411-NIKE-AIR-ZOOM-PEGASUS-38-3911641811914046-1.jpg"
+                alt="img card-img"
+                alt="img card-img"
+                alt="img card-img"
+                alt="img card-img"
+              />
+              <div class="card-header">
+                <div class="card-heading">
+                  <h2 class="text-regular color-secondary">Nike Shoes</h2>
+                </div>
+                <p class="text-xs color-gray">
+                  Nike Men Black AIR ZOOM PEGASUS 38 Running Shoes
+                </p>
+                <div class="product-count-container">
+                  <span class="product-count"><i class="fas fa-plus"></i></span>
+                  <p>1</p>
+                  <span class="product-count"
+                    ><i class="fas fa-minus"></i
+                  ></span>
+                </div>
+                <p class="text-sm color-secondary font-bold">Rs. 939</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="cart-sidebar">
+        <p class="color-gray text-xs font-semibold">ORDER SUMMARY</p>
+        <div class="divider-sm"></div>
+        <div class="order-price-container">
+          <div class="order-price-list">
+            <p>Subtotal (2-items)</p>
+            <p class="order-price">₹1025</p>
+          </div>
+          <div class="order-price-list">
+            <p>Discount</p>
+            <p class="order-price">- ₹100</p>
+          </div>
+          <div class="order-price-list">
+            <p>Delivery</p>
+            <p class="order-price">₹40</p>
+          </div>
+        </div>
+        <div class="divider-sm"></div>
+        <div class="total-price-container">
+          <p>Total Amount:</p>
+          <p>₹965</p>
+        </div>
+        <div class="divider-sm"></div>
+        <button class="btn btn-block bg-primary">PLACE ORDER</button>
+      </aside>
+    </section>
+    <script src="../../index.js"></script>
+  </body>
+</html>
